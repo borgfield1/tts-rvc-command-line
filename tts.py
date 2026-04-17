@@ -13,7 +13,7 @@ parser.add_argument("--edge-save-loc", "-esl", help="edge-tts save location", de
 parser.add_argument("--rvc-save-loc", "-rsl", help="rvc save location", default="/etc/rvc/tts/output/rvc.wav")
 parser.add_argument("--shift", "-s", help="pitch shift", default=0)
 parser.add_argument("--index", "-i", help="index file", default=None)
-parser.add_argument("--cuda", "-c", help="use cuda example --cuda cuda:0" default="cpu")
+parser.add_argument("--cuda", "-c", help="use cuda example --cuda cuda:0", default="cpu")
 
 def rvc(model, in_loc, out_loc, shift, index, cuda):
     from rvc_python.infer import RVCInference
